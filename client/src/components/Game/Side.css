@@ -1,0 +1,35 @@
+.Side {
+    background-color: rgba(252, 252, 142);
+    opacity: .5;
+    width: 50px;
+    height: 50px;
+    border: rgb(0, 58, 0) solid 1px;
+    border-radius: 5px;
+    position: absolute;
+    pointer-events: all;
+}
+
+.Cube .Side:nth-child(1) {
+    transform: rotateX(0deg);
+}
+
+.Cube .Side:nth-child(2) {
+    transform: rotateX(90deg) translateZ(25px) translateY(25px)
+}
+
+.Cube .Side:nth-child(3) {
+    transform: translateZ(50px);
+}
+
+.Cube .Side:nth-child(4) {
+    transform: rotateX(90deg) translateZ(-25px) translateY(25px) ;
+}
+
+.Cube .Side:nth-child(5) {
+    transform: translateZ(25px) translateX(25px) rotateY(90deg);
+}
+  
+.Cube .Side:nth-child(6) {
+    transform: translateZ(25px) translateX(-25px) rotateY(-90deg);
+}
+

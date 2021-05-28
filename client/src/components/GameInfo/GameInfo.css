@@ -1,0 +1,80 @@
+.GameInfo {
+    text-align: center;
+}
+
+.awaitingOpponent {
+    margin-top: 10px;
+}
+
+.awaitingOpponent p {
+    font-size: 2em;
+}
+
+.indicatorCubeDiv {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.indicatorCubeWrapper {
+    
+    perspective-origin: 50% 50%;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.indicatorCube {
+    background-color: red;
+    margin: auto;
+    transform-style: preserve-3d;
+    transform: rotateX(30deg);
+   animation: cubeSpin 5s linear infinite;
+}
+
+@keyframes cubeSpin {
+    from {transform: rotateY(0deg) rotateX(0deg)}
+    to {transform: rotateY(360deg) rotateX(360deg)}
+  }
+  
+
+
+.indicatorCubeSide {
+    background-color: rgba(252, 252, 142);
+    opacity: .5;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    border: rgb(0, 58, 0) solid 1px;
+    position: absolute;
+    pointer-events: all;
+    transition: background-color 250ms;
+    transition-delay: 500ms;
+}
+
+.indicatorCube .indicatorCubeSide:nth-child(1) {
+    transform: rotateY(0deg) translateZ(15px);
+}
+
+.indicatorCube .indicatorCubeSide:nth-child(2) {
+    transform: rotateY(90deg) translateZ(15px);
+}
+
+.indicatorCube .indicatorCubeSide:nth-child(3) {
+    transform: rotateY(180deg) translateZ(15px);
+}
+
+.indicatorCube .indicatorCubeSide:nth-child(4) {
+    transform: rotateX(-90deg) translateZ(-15px);
+}
+
+.indicatorCube .indicatorCubeSide:nth-child(5) {
+    transform: rotateX(90deg) translateZ(15px);
+}
+  
+.indicatorCube .indicatorCubeSide:nth-child(6) {
+    transform: rotateX(-90deg) translateZ(15px) ;
+}
+
+
+

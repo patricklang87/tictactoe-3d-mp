@@ -1,0 +1,15 @@
+.Setup{
+    margin: auto;
+    text-align: center;
+}
+
+.Setup button {
+    font-size: 1.5em;
+    margin: 5px;
+    border-style: groove;
+    background-color: rgba(252, 252, 142, 0.699)
+}
+
+.Setup button:hover {
+    background-color: rgba(252, 252, 142)
+} 

@@ -1,0 +1,23 @@
+.Sheet {
+    display: grid;
+    grid-template: repeat(3, auto) / repeat(3, auto);
+    grid-gap: 20px;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    position: absolute;
+    pointer-events: none;
+}
+
+.Game .Sheet:nth-child(1) {
+    transform: translateZ(-125px) ;
+  }
+  
+.Game .Sheet:nth-child(2) {
+    transform: translateZ(-25px);
+  }
+  
+.Game .Sheet:nth-child(3) {
+    transform: translateZ(75px);
+  }
+
