@@ -12,6 +12,9 @@
     margin: auto;
     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
     pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .winnerRotation {

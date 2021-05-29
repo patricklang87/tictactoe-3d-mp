@@ -1,15 +1,10 @@
 .Setup{
     margin: auto;
+    margin-top: 130px;
     text-align: center;
 }
 
-.Setup button {
-    font-size: 1.5em;
-    margin: 5px;
-    border-style: groove;
-    background-color: rgba(252, 252, 142, 0.699)
+.setupOptions {
+    margin-top: 70px;
 }
 
-.Setup button:hover {
-    background-color: rgba(252, 252, 142)
-} 

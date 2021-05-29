@@ -9,16 +9,12 @@ export default function AcceptRematch() {
     const roomName = useSelector(state => state.game.roomName);
 
     const handleClick = () => {
-        dispatch(resetGame());
         socket.emit('acceptRematch', roomName);
+        dispatch(resetGame());
+        
     }
 
-    useEffect(() => {
-        socket.on('confirmRematch', (playerOneTurn) => {
-            dispatch(setRematchRequested(false));
-            dispatch(setPlayerTurn(playerOneTurn));
-        })
-    }, [dispatch, socket]);
+
 
 
     return (

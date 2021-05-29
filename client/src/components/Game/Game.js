@@ -3,7 +3,7 @@ import Sheet from './Sheet';
 import GameInfo from '../GameInfo/GameInfo';
 import ResetGame from '../Setup/ResetGame';
 import { useSelector, useDispatch } from 'react-redux';
-import { setGameState, setWinner } from '../../redux/gameSlice';
+import { setGameState, setWinner, setRematchRequested, setPlayerTurn } from '../../redux/gameSlice';
 import { useSocket } from '../../contexts/socketProvider'
 import { checkForWinner } from '../../utils/checkForWinner';
 import './Game.css';
@@ -24,6 +24,28 @@ export default function Game() {
             socket.off('gameUpdate');
         }
     }, [socket, dispatch]);
+
+    useEffect(() => {
+        if (socket == null) return;
+        socket.on('proposeRematch', () => {
+            console.log("rematch Requested");
+            dispatch(setRematchRequested(true));
+
+        });
+
+        return () => {socket.off('proposeRematch')};
+    }, [dispatch, socket]);
+
+    useEffect(() => {
+        if (socket == null) return;
+        socket.on('confirmRematch', (playerOneTurn) => {
+            dispatch(setRematchRequested(false));
+            dispatch(setPlayerTurn(playerOneTurn));
+            document.getElementsByTagName('HTML')[0].style.backgroundColor = "white";
+        })
+
+        return () => socket.off('confirmRematch');
+    }, [dispatch, socket]);
 
     useEffect(() => {
         const winner = checkForWinner(gameState);

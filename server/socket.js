@@ -1,7 +1,7 @@
 const clientRooms = {};
 
 const createRoomName = (length) => {
-    const standardSymbols = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const standardSymbols = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
     let roomName = '';
     for (let x = 0; x < length; x++) {
         let newSymbol = standardSymbols[Math.floor(Math.random() * standardSymbols.length)];
@@ -48,6 +48,7 @@ const socket = io => {
         }
 
         const handleAcceptRematch = (roomName) => {
+            console.log("rematch accepted");
             const playerOneTurn = coinFlip();
             io.in(roomName).emit('confirmRematch', playerOneTurn);
         }
@@ -60,7 +61,7 @@ const socket = io => {
         });
 
         socket.on('requestRematch', roomName => handleRequestRematch(roomName));
-        socket.on('requestRematch', roomName => handleAcceptRematch(roomName));
+        socket.on('acceptRematch', roomName => handleAcceptRematch(roomName));
     });
 }
 

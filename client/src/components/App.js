@@ -16,6 +16,7 @@ function App() {
     let HTML = document.getElementsByTagName('HTML')[0];
     if (winner === 2) HTML.style.backgroundColor = "green";
     if (winner === 1) HTML.style.backgroundColor = "hotpink";
+    if (winner === 0) HTML.style.backroundColor = "white";
   }, [winner])
   
 
