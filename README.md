@@ -4,7 +4,13 @@
 
 ## Links
 
-- [Repo](https://github.com/patricklang87/tictactoe-3d-mp/) 
+- [Repo](https://github.com/patricklang87/tictactoe-3d-mp/)
+
+## Screenshots
+
+### Desktop
+
+### Mobile
 
 
 ## Run the project
