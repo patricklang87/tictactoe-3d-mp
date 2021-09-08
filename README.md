@@ -10,9 +10,9 @@
 
 ### Desktop
 
-<img src="https://user-images.githubusercontent.com/73432960/132587479-ee251be0-37b1-453a-882f-3d6076727159.JPG" alt="startscreen" width="350"/>
-<img src="https://user-images.githubusercontent.com/73432960/132587469-56b6bea3-b0b6-4b26-acd7-df1629fb77e6.JPG" alt="awaiting" width="350"/>
-<img src="https://user-images.githubusercontent.com/73432960/132587483-1c517234-8930-4729-8a36-de59d6169d4e.JPG" alt="gameplay" width="350"/>
+<img src="https://user-images.githubusercontent.com/73432960/132587479-ee251be0-37b1-453a-882f-3d6076727159.JPG" alt="startscreen" width="500"/>
+<img src="https://user-images.githubusercontent.com/73432960/132587469-56b6bea3-b0b6-4b26-acd7-df1629fb77e6.JPG" alt="awaiting" width="500"/>
+<img src="https://user-images.githubusercontent.com/73432960/132587483-1c517234-8930-4729-8a36-de59d6169d4e.JPG" alt="gameplay" width="500"/>
 
 ![startscreen_mobile](https://user-images.githubusercontent.com/73432960/132587503-58c13b8f-40c7-453f-b337-882050064052.JPG)
 ![gameplay_mobile](https://user-images.githubusercontent.com/73432960/132587513-be7a7e7b-78d3-454d-a69f-fe1014f7d7e4.JPG)
